@@ -23,7 +23,41 @@ nav > li{
 nav > h2{
     color:rgb(240, 240, 240)
 }
-.hero {
+.hero{
+  display : flex;
+  width : 100%;
+  align-items: stretch;
+  align-content: stretch;
+}
+.main-panel{
+  justify-content: space-around;
+  display:flex;
+  flex-wrap: wrap;
+  width:75%;
+  gap:30px;
+  border : 3px solid gold;
+  background-color: rgb(45, 66, 159);
+}
+.score-panel{
+  display:flex;
+  flex-wrap:wrap;
+  width:25%;
+  border: 3px solid gold;
+  background-color: rgb(219, 112, 50);
+}
+.card-title{
+  visibility: hidden;
+
+}
+.game-card:hover .card-title{
+  transform: translateY(-30px);
+  visibility: visible;
+
+}
+.game-card:hover{
+  scale:1.01;
+}
+/* .hero {
     display: flex;
     height: 100vh;
     align-items: stretch;
@@ -56,4 +90,4 @@ nav > h2{
     background-color: rgb(219, 112, 50);
     align-items: flex-start;
   }
-  
+   */
